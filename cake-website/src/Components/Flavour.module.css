@@ -1,0 +1,32 @@
+.Flavourcontainer{
+    height: 900px;
+background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%);
+
+}
+.flavourinfo{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.flavour{
+    text-align: center;
+    font-size: 25px;
+   
+}
+.flavours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 50px;
+}
+.image{
+    height: 280px;
+    width: 300px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

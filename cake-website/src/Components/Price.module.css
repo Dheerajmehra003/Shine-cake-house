@@ -1,0 +1,35 @@
+.Pricecontainer{
+    background-image: url("./images/Price.jpg");
+    height: 500px;
+}
+h2{
+    background-color: rgb(65, 38, 38);
+    color: white;
+    text-align: center;
+    width: 400px;
+    font-size: 60px;
+    margin-left: 500px;
+    position: relative;
+    top: 50px;
+    border-radius: 20px;
+}
+.Prices{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.Pricetag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,231,0,1) 0%, rgba(108,31,31,1) 100%);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 50%;
+
+}

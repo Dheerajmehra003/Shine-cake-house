@@ -1,0 +1,14 @@
+.Profilecontainer{
+    background-image: url("./images/Shinecake.jpg");
+   height: 600px;
+}
+h1{
+background: linear-gradient(69deg, rgba(83,16,16,1) 0%, rgba(255,244,1,1) 52%, rgba(108,31,31,1) 100%);
+display: inline-block;
+width: 800px;
+text-align: center;
+margin-left: 320px;
+margin-top: 300px;
+font-size: 80px;
+border-radius: 20px;
+}
