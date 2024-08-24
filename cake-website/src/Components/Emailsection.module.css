@@ -1,0 +1,50 @@
+.Emailcontainer{
+    display: flex;
+    gap: 50px;
+    background-color: rgb(255, 255, 111);
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.iconcontainer{
+    display: flex;
+    font-size: 20px;
+}
+.formcontainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#input{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+}
+#btn{
+    position: relative;
+    right: 60px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+}
+@media(max-width:768px){
+  .Emailcontainer{
+    height: 100%;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  .iconcontainer{
+    padding-top: 10px;
+    font-size: 13px;
+  }
+  #input{
+    height: 20px;
+    width: 150px;
+  }
+ .formcontainer{
+  display: none;
+ }
+
+}

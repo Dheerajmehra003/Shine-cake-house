@@ -3,8 +3,9 @@ import styles from "./Flavour.module.css"
 import Flavour0ne from "./images/choclate.jpg"
 import Flavourtwo from "./images/strawberry.jpg"
 import Flavourthree from "./images/butter.jpg"
-import Flavourfour from "./images/download (1).jpeg"
-import Flavourfive from "./images/download (2).jpeg"
+import Flavourfour from "./images/pinapplecake.avif"
+import Flavourfive from "./images/vanillacake.avif"
+import Flavoursix from "./images/blueberrycake.avif"
 
 function Flavour() {
   return (
@@ -23,19 +24,19 @@ function Flavour() {
         </div>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourthree} />
-            <p>CHOCLATE</p>
+            <p>BUTTERSCOTCH</p>
         </div>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourfour} />
-            <p>CHOCLATE</p>
+            <p>PINEAPPLE</p>
         </div>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourfive} />
-            <p>CHOCLATE</p>
+            <p>VANILLA</p>
         </div>
         <div className={styles.flavour}>
-            <img className={styles.image} src={Flavour0ne} />
-            <p>CHOCLATE</p>
+            <img className={styles.image} src={Flavoursix} />
+            <p>BLUEBERRY</p>
         </div>
      </div>
     </div>

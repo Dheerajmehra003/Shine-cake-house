@@ -1,21 +1,19 @@
-.Flavourcontainer{
-    height: 900px;
-background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%);
-
+.choicecontainer{    height: 1250px;
+    background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%);
 }
-.flavourinfo{
+.choiceinfo{
     font-size: 60px;
     font-weight: 600;
     color: white;
     text-align: center;
     padding-top: 50px;
 }
-.flavour{
+.design{
     text-align: center;
     font-size: 25px;
-   color: white;
+    color: white;
 }
-.flavours{
+.designs{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,23 +29,23 @@ background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 @media(max-width:768px){
-    .Flavourcontainer{
+    .choicecontainer{
         height: 100%;
         padding-bottom: 20px;
     }
-    .flavourinfo{
-        font-size: 40px;
+    .choiceinfo{
+        font-size: 30px;
         padding-top: 20px;
     }
     .image{
         height: 150px;
         width: 160px;
     }
-    .flavours{
+    .designs{
         padding-top: 20px;
         gap: 30px;
     }
-    .flavour{
+    .design{
         font-size: 20px;
     }
 }

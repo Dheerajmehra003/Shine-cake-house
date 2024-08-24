@@ -1,53 +1,46 @@
-.Flavourcontainer{
-    height: 900px;
-background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%);
-
+.ocasioncontainer{
+    height: 550px;
+    background-color: rgb(94, 36, 36);
 }
-.flavourinfo{
+.ocasioninfo{
     font-size: 60px;
     font-weight: 600;
     color: white;
     text-align: center;
     padding-top: 50px;
 }
-.flavour{
-    text-align: center;
-    font-size: 25px;
-   color: white;
-}
-.flavours{
+.ocasions{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
     padding-top: 50px;
+
+}
+.ocasion{
+ text-align: center;
+    font-size: 25px;
+    color: white;
 }
 .image{
     height: 280px;
-    width: 300px;
+    width: 350px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 @media(max-width:768px){
-    .Flavourcontainer{
+    .ocasioncontainer{
         height: 100%;
         padding-bottom: 20px;
+
     }
-    .flavourinfo{
-        font-size: 40px;
-        padding-top: 20px;
+    .ocasioninfo{
+        font-size: 30px;
+        padding-top: 25px
     }
-    .image{
-        height: 150px;
-        width: 160px;
-    }
-    .flavours{
-        padding-top: 20px;
-        gap: 30px;
-    }
-    .flavour{
-        font-size: 20px;
+    .ocasions{
+        padding-top: 25px;
     }
 }

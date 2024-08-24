@@ -1,14 +1,55 @@
 .Profilecontainer{
     background-image: url("./images/Shinecake.jpg");
-   height: 600px;
+   height: 40rem;
 }
 h1{
 background: linear-gradient(69deg, rgba(83,16,16,1) 0%, rgba(255,244,1,1) 52%, rgba(108,31,31,1) 100%);
 display: inline-block;
-width: 800px;
+width: 50rem;
 text-align: center;
-margin-left: 320px;
-margin-top: 300px;
-font-size: 80px;
-border-radius: 20px;
+position: relative;
+top: 17rem;
+left: 18rem;
+font-size: 5rem;
+border-radius: 1.5rem;
+}
+#headingtwo{
+    background: linear-gradient(69deg, rgba(83,16,16,1) 0%, rgba(255,244,1,1) 52%, rgba(108,31,31,1) 100%);
+    display: inline-block;
+    width: 35rem;
+    text-align: center;
+    position: relative;
+    top: 18rem;
+    left: 24rem;
+    font-size: 4rem;
+    border-radius: 1.5rem;
+
+}
+@media(max-width:768px){
+    .Profilecontainer{
+        background-size: 100% 100%;
+        height:280px;
+        background-repeat: no-repeat;
+    
+    
+    }
+    h1{
+        width: 300px;
+        height: 30px;
+        position: relative;
+        top: 120px;
+        left: 60px;
+        font-size: 20px;
+
+    }
+    #headingtwo{
+        width: 200px;
+        height: 30px;
+        position: relative;
+        top: 130px;
+        left: 110px;
+        font-size: 20px;
+        font-weight: 600;
+        justify-content: center;
+    }
 }

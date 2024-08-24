@@ -1,0 +1,29 @@
+.footercontainer{
+    display: flex;
+    padding: 15px;
+    font-size: 20px;
+    gap: 50rem;
+}
+#icon{
+    position: relative;
+    top: 2px;
+}
+.iconcontainer{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.icons{
+    height: 2rem;
+    width: 2rem;
+
+}
+@media(max-width:768px){
+    .footercontainer{
+        padding: 5px;
+        gap: 40px;
+        font-size: 13px;
+        align-items: center;
+    }
+
+}

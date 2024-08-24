@@ -71,3 +71,26 @@ ol li{
     cursor: pointer;
 
 }
+@media(max-width:768px){
+    .headercontainer{
+     gap: 0;
+     padding: 10px;
+    }
+    nav{
+        margin: 0;
+    font-size: 15px;
+    width: 80px;
+    }
+    .secondheader{
+     display: none;
+    }
+    .searchbar{
+        display: none;
+    }
+    ul{
+        margin-right: 0;
+    }
+    ul li{
+        font-size: 12px;
+    }
+}
