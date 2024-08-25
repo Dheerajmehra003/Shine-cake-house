@@ -5,6 +5,7 @@
     background: linear-gradient(310deg, rgba(67,44,44,1) 0%, rgba(105,37,37,1) 52%, rgba(71,31,31,1) 100%);
     color: yellow;
     gap: 20px;
+    padding: 10px;
 }
 nav{
     font-size: 40px;

@@ -32,6 +32,12 @@ h2{
   font-size: 40px;
   border-radius: 50%;
 
+
+}
+.priceinfo{
+    color: black !important;
+    text-decoration: none !important;
+    
 }
 @media(max-width:768px){
     .Pricecontainer{
