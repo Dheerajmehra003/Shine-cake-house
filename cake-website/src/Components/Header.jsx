@@ -9,10 +9,11 @@ import { FaCaretDown } from "react-icons/fa";
 function Header() {
   return (
     <>
+    <div className={styles.headerscontainer}>
     <div className={styles.headercontainer}>
       <nav>Shine Cake </nav>
 
-      <ul>
+      <ul className={styles.headerlist}>
         <li>
           <form>
             <div className={styles.searchbar}>
@@ -37,7 +38,7 @@ function Header() {
         </li>
       </ul>
     </div>
-    <div className={styles.secondheader}>
+    <div>
         <ol className={styles.secondheader}>
             <li>CHOCLATE
             <FaCaretDown />
@@ -68,6 +69,7 @@ function Header() {
             </li>
         </ol>
 
+    </div>
     </div>
 </>  
 );

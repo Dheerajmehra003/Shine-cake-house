@@ -1,3 +1,8 @@
+.headerscontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .headercontainer{
     display: flex;
     justify-content:space-between;
@@ -6,19 +11,22 @@
     color: yellow;
     gap: 20px;
     padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 nav{
     font-size: 40px;
     font-weight: 600;
     margin-left: 20px;
 }
-ul{
+.headerlist{
     display: flex;
     gap: 10px;
     align-items: flex-start;
     margin-right:20px
 }
-ul li{
+.headerlist li{
     list-style: none;
     font-size: 25px;
     font-weight: 400;
@@ -57,15 +65,19 @@ ul li{
 #carticon{
     cursor: pointer;
 }
-ol{
+.secondheader{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     height: 30px;
     border-bottom: 1px solid black;
+    position:relative;
+    top: 67px;
+    width: 100%;
+    background-color: white;
 }
-ol li{
+.secondheader li{
     display: flex;
     align-items: center;
     list-style: none;
@@ -88,10 +100,10 @@ ol li{
     .searchbar{
         display: none;
     }
-    ul{
+    .headerlist{
         margin-right: 0;
     }
-    ul li{
+    .headerlist li{
         font-size: 12px;
     }
 }

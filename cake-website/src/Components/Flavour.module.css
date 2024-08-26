@@ -30,6 +30,9 @@ background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+.link{
+    text-decoration: none;
+}
 @media(max-width:768px){
     .Flavourcontainer{
         height: 100%;

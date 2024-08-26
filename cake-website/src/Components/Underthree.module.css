@@ -1,6 +1,7 @@
 .Underonecontainer{
     background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%);
     padding-bottom: 20px;
+    margin-top: 60px;
 }
 .underinfo{
     font-size: 60px;

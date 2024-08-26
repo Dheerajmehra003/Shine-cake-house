@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Underone.module.css";
 import { FaStar } from "react-icons/fa";
 import Flavour0ne from "./images/choclate.jpg"
+import { Link } from "react-router-dom";
 
 function Underone() {
   return (
@@ -12,9 +13,11 @@ function Underone() {
         </div>
         <div className={styles.cakescontainer}>
           <div className={styles.cake}>
+        <Link className={styles.link} to="/lightchoclate">
           <img className={styles.image} src={Flavour0ne} />
           <p>Light choclate cake half kg
           </p>
+          </Link>
             <div className={styles.rating}>
                 <p>₹280</p>
                 <div className={styles.iconcontainer} >
