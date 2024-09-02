@@ -1,43 +1,46 @@
 import React from "react";
 import styles from "./Lightchoclate.module.css";
-import Flavour0ne from "./images/choclate.jpg";
 import { FaStar } from "react-icons/fa";
 import { FaCartPlus } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { useParams } from "react-router-dom";
+import flavour from "./images/choclate.jpg";
 
 function Lightchoclate() {
+const params = useParams();
+const {name,price} = params
   return (
     <>
       <div className={styles.container}>
         <div className={styles.imagecontainer}>
 
-        <img className={styles.image} src={Flavour0ne} />
+        <img className={styles.image} src={flavour} />
         </div>
         <div>
-          <p className={styles.font}>Light choclate half kg</p>
+          <p className={styles.font}>{name} half kg</p>
           <div className={styles.iconcontainer}>
             <button className={styles.btn}>0.0</button>
             <FaStar className={styles.icon} />
           </div>
-          <p className={styles.font}>₹280</p>
+          <p className={styles.font}>₹{price}</p>
           <p className={styles.fontupgrade}>Pick an Upgrade</p>
           <div className={styles.imagecontainer}>
             <div>
-              <img className={styles.images} src={Flavour0ne} />
+              <img className={styles.images} src={flavour} />
               <p>
-                1/2 kg <br /> ₹280
+                1/2 kg <br /> ₹{price}
               </p>
             </div>
             <div>
-              <img className={styles.images} src={Flavour0ne} />
+              <img className={styles.images} src={flavour} />
               <p>
-                1 kg <br /> ₹550
+                1 kg <br /> ₹{price *2}
               </p>
             </div>
             <div>
-              <img className={styles.images} src={Flavour0ne} />
+              <img className={styles.images} src={flavour} />
               <p>
-                2 kg <br /> ₹1100
+                2 kg <br /> ₹{price*4}
               </p>
             </div>
           </div>

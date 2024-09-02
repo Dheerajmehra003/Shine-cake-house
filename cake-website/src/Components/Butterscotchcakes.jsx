@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./Choclate.module.css";
 import { FaStar } from "react-icons/fa";
 import Flavour0ne from "./images/butter.jpg";
-import { Link } from "react-router-dom";
 
 function Butterscotchcakes() {
   return (
@@ -13,10 +12,10 @@ function Butterscotchcakes() {
       </div>
       <div className={styles.cakescontainer}>
         <div className={styles.cake}>
-          <Link className={styles.link} to="/lightstrawberry">
+      
             <img className={styles.image} src={Flavour0ne} />
             <p> Butterscotch cake </p>
-          </Link>
+    
           <div className={styles.rating}>
             <p>₹280</p>
             <div className={styles.iconcontainer}>

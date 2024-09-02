@@ -9,7 +9,6 @@ import Underthree from './Components/Underthree';
 import Lightchoclate from './Components/Lightchoclate';
 import Choclatecakes from './Components/Choclatecakes';
 import Strawberry from './Components/Strawberry';
-import Lightstrawberry from './Components/Lightstrawberry';
 import Butterscotchcakes from './Components/Butterscotchcakes';
 import Pineapplecakes from './Components/Pineapplecakes';
 
@@ -21,11 +20,10 @@ function App() {
      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Profile />} />
-          <Route path="/under299" element={<Underone />} />
+          <Route path="/under299" element={<Underone  />} />
           <Route path="/under599" element={<Undertwo />} />
           <Route path="/under999" element={<Underthree />} />
-          <Route path="/lightchoclate" element={<Lightchoclate/>} />
-          <Route path="/lightstrawberry" element={<Lightstrawberry/>} />
+          <Route path="/under299/:name/:price" element={<Lightchoclate/>} />
           <Route path="/choclatecakes" element={<Choclatecakes/>} />
           <Route path="/strawberrycakes" element={<Strawberry/>} />
           <Route path="/butterscotchcakes" element={<Butterscotchcakes/>} />

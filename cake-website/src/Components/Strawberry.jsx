@@ -13,10 +13,8 @@ function Strawberry() {
       </div>
       <div className={styles.cakescontainer}>
         <div className={styles.cake}>
-          <Link className={styles.link} to="/lightstrawberry">
             <img className={styles.image} src={Flavour0ne} />
             <p> Strawberry cake </p>
-          </Link>
           <div className={styles.rating}>
             <p>₹280</p>
             <div className={styles.iconcontainer}>
