@@ -1,46 +1,63 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./Lightchoclate.module.css";
 import { FaStar } from "react-icons/fa";
 import { FaCartPlus } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { useParams } from "react-router-dom";
-import flavour from "./images/choclate.jpg";
+import { Shopcontext } from "../Context/shopContext";
 
 function Lightchoclate() {
-const params = useParams();
-const {name,price} = params
-  return (
+  const {productID} = useParams();
+  const{products,addToCart} = useContext(Shopcontext)
+  const [productData , setProductData]=useState('')
+  const [image , setImage]=useState('')
+  const [size,setSize]=useState('')
+
+
+  const fetchProductData = async () => {
+    products.map((item)=>{
+      if(item._id === productID) {
+        setProductData(item)
+         setImage(item.image[0])
+        return null;
+      }
+    })
+  }
+    useEffect(()=>{
+    fetchProductData()
+  },[products])
+  return productData ?(
     <>
       <div className={styles.container}>
         <div className={styles.imagecontainer}>
 
-        <img className={styles.image} src={flavour} />
+        <img className={styles.image} src={image} />
         </div>
         <div>
-          <p className={styles.font}>{name} half kg</p>
+          <p className={styles.font}>{productData.name} half kg</p>
           <div className={styles.iconcontainer}>
             <button className={styles.btn}>0.0</button>
             <FaStar className={styles.icon} />
           </div>
-          <p className={styles.font}>₹{price}</p>
+          <p className={styles.font}>₹{productData.price}</p>
           <p className={styles.fontupgrade}>Pick an Upgrade</p>
           <div className={styles.imagecontainer}>
-            <div>
-              <img className={styles.images} src={flavour} />
+            <div onClick={()=>setSize(productData.sizeone)}  >
+              <img className={`${size===productData.sizeone? styles.border:"" } ${styles.images}`} src={image} />
               <p>
-                1/2 kg <br /> ₹{price}
+                {productData.sizeone} <br /> ₹{productData.price}
               </p>
             </div>
-            <div>
-              <img className={styles.images} src={flavour} />
+            <div onClick={()=>setSize(productData.sizetwo)}>
+            <img className={`${size===productData.sizetwo? styles.border:"" } ${styles.images}`} src={image} />
               <p>
-                1 kg <br /> ₹{price *2}
+                {productData.sizetwo} <br /> ₹{productData.price *2}
               </p>
             </div>
-            <div>
-              <img className={styles.images} src={flavour} />
+            <div onClick={()=>setSize(productData.sizethree)}>
+            <img className={`${size===productData.sizethree? styles.border:"" } ${styles.images}`} src={image} />
               <p>
-                2 kg <br /> ₹{price*4}
+                {productData.sizethree} <br /> ₹{productData.price*4}
               </p>
             </div>
           </div>
@@ -51,7 +68,7 @@ const {name,price} = params
           </form>
           <div className={styles.iconscontainer}>
             <div className={styles.cart}>
-              <p>Add To cart</p>
+              <p onClick={()=>addToCart(productData._id,size)}>Add To cart</p>
             </div>
               <FaCartPlus className={styles.iconcart} />
             <div className={styles.buy}>
@@ -63,7 +80,7 @@ const {name,price} = params
             <p className={styles.description} >Description</p>
             <p className={styles.lists} >Product Details:</p>
             <ul>
-                <li>Cake Flavour-Choclate</li>
+                <li>Cake-{productData.name}</li>
                 <li>Type of cake-cream cake</li>
                 <li>Shape-round</li>
                 <li>Weight-500gm</li>
@@ -73,8 +90,7 @@ const {name,price} = params
             </ul>
             <p className={styles.listtwo} >Ingredients:</p>
             <ul>
-                <li>Chocolate premix, Refined oil, Breakfast Sugar, Chocolate Truffle Base,<br/>
-                     Dark Chocolate compound, Milk chocolate compound, Chocolate Glaze</li>
+                <li>{productData.description}</li>
             </ul>
             <p className={styles.listtwo} >Please Note:</p>
             <ul>
@@ -97,7 +113,7 @@ const {name,price} = params
         </div>
       </div>
     </>
-  );
-}
+  ): <div></div>
+};
 
 export default Lightchoclate;

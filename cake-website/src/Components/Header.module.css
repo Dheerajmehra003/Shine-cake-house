@@ -22,15 +22,17 @@ nav{
 }
 .headerlist{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: flex-start;
-    margin-right:20px
+    margin-right:40px
+
 }
 .headerlist li{
     list-style: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     cursor: default;
+    color: yellow;
 
 }
 .searchbar{
@@ -64,7 +66,9 @@ nav{
 }
 #carticon{
     cursor: pointer;
+    color: yellow;
 }
+
 .secondheader{
     display: flex;
     justify-content: center;
@@ -84,13 +88,25 @@ nav{
     cursor: pointer;
 
 }
+.link{
+    text-decoration: none;
+}
+.list:hover{
+border-bottom: 1px solid yellow;
+color: yellow;
+}
+.menu{
+    display: none;
+}
+
 @media(max-width:768px){
     .headercontainer{
-     gap: 0;
+     gap: 100px;
      padding: 10px;
+     justify-content:flex-start;
     }
     nav{
-        margin: 0;
+        margin-right: 150px;
     font-size: 15px;
     width: 80px;
     }
@@ -105,5 +121,23 @@ nav{
     }
     .headerlist li{
         font-size: 12px;
+    }
+    #carticon{
+        display: none;
+    }
+    .headerlist{
+        flex-direction: column;
+        position: absolute;
+        width: 250px;
+        height: 230px;
+        top: 36px;
+        right: 0;
+        background: linear-gradient(310deg, rgba(67,44,44,1) 0%, rgba(105,37,37,1) 52%, rgba(71,31,31,1) 100%);
+        justify-content: center;
+        border: 1px solid black;
+        z-index: 10;
+    }
+    .menu{
+        display: inline;
     }
 }

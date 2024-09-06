@@ -2,34 +2,26 @@ import './App.css'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Profile from './Components/Profile'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Underone from './Components/Underone';
-import Undertwo from './Components/Undertwo';
-import Underthree from './Components/Underthree';
+import {  Routes, Route } from "react-router-dom";
+import Underone from './Price/Underone'
 import Lightchoclate from './Components/Lightchoclate';
-import Choclatecakes from './Components/Choclatecakes';
-import Strawberry from './Components/Strawberry';
-import Butterscotchcakes from './Components/Butterscotchcakes';
-import Pineapplecakes from './Components/Pineapplecakes';
+import Underthree from './Price/Underthree';
+import Cart from './Pages/Cart';
 
 function App() {
 
   return (
     <>
      <Header/>
-     <BrowserRouter>
+    
         <Routes>
           <Route path="/" element={<Profile />} />
           <Route path="/under299" element={<Underone  />} />
-          <Route path="/under599" element={<Undertwo />} />
-          <Route path="/under999" element={<Underthree />} />
-          <Route path="/under299/:name/:price" element={<Lightchoclate/>} />
-          <Route path="/choclatecakes" element={<Choclatecakes/>} />
-          <Route path="/strawberrycakes" element={<Strawberry/>} />
-          <Route path="/butterscotchcakes" element={<Butterscotchcakes/>} />
-          <Route path="/pineapplecakes" element={<Pineapplecakes/>} />
+          <Route path='/product/:productID' element={<Lightchoclate/>}/>
+          <Route path='/under999' element={<Underthree/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+         
         </Routes>
-      </BrowserRouter>
      <Footer/>
     </>
   )

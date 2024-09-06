@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { FiShoppingCart } from "react-icons/fi";
-import { IoPersonOutline } from "react-icons/io5";
-import { CiSearch } from "react-icons/ci";
-import { IoLocationSharp } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { IoPerson } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 
 function Header() {
   return (
@@ -14,29 +14,25 @@ function Header() {
       <nav>Shine Cake </nav>
 
       <ul className={styles.headerlist}>
+      <Link className={styles.link} to="/">
+      <li className={styles.list}>HOME</li>
+      </Link>
+      <li className={styles.list}>BIRTHDAY</li>
+      <li className={styles.list}>ANNIVERSARY</li>
+      <li className={styles.list}>ABOUT</li>
+      <li className={styles.list}>CONTACT </li>
         <li>
-          <form>
-            <div className={styles.searchbar}>
-              <input id={styles.search} type="text" placeholder="search here..." />
-              <CiSearch id={styles.searchicon} />
-            </div>
-          </form>
-        </li>
-        <li>
-            <div className={styles.searchbar}>
-            <button id={styles.btn}>select Delivery Location</button>
-            <IoLocationSharp id={styles.locationicon} />
-            </div>
-        </li>
-        <li>Birthday</li>
-        <li>Anniversary</li>
-        <li>
+          <Link to="/cart">
           <FiShoppingCart id={styles.carticon} />
+                    </Link>
         </li>
         <li>
-          <IoPersonOutline id={styles.carticon}  />
+        <IoPerson  id={styles.carticon}  />
         </li>
       </ul>
+      <div className={styles.menu}>
+      <IoMenu />
+      </div>
     </div>
     <div>
         <ol className={styles.secondheader}>
