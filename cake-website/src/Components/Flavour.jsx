@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import styles from "./Flavour.module.css"
 import Flavour0ne from "./images/choclate.jpg"
 import Flavourtwo from "./images/strawberry.jpg"
@@ -8,45 +8,51 @@ import Flavourfive from "./images/vanillacake.avif"
 import Flavoursix from "./images/blueberrycake.avif"
 import { Link } from "react-router-dom";
 
+
 function Flavour() {
+ 
   return (
     <div className={styles.Flavourcontainer}>
         <div className={styles.flavourinfo}>
      <p>Pick A Flavour</p>
         </div>
      <div className={styles.flavours}>
-        <Link className={styles.link} to={"/choclatecakes"}>
+        <Link className={styles.link} to={"/Choclate"}>
         <div className={styles.flavour}>
-            <img className={styles.image} src={Flavour0ne} />
+            <img className={styles.image} src={Flavour0ne} Value={'Choclate'} />
             <p>CHOCLATE</p>
         </div>
         </Link>
-        <Link className={styles.link} to={"/strawberrycakes"}>
+        <Link className={styles.link} to={"/Choclate"}>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourtwo} />
             <p>STRAWBERRY</p>
         </div>
         </Link>
-        <Link className={styles.link} to={"/butterscotchcakes"}>
+        <Link className={styles.link} to={"/Choclate"}>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourthree} />
             <p>BUTTERSCOTCH</p>
         </div>
         </Link>
-        <Link className={styles.link} to={"/pineapplecakes"}>
+        <Link className={styles.link} to={"/Choclate"}>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourfour} />
             <p>PINEAPPLE</p>
         </div>
         </Link>
+        <Link className={styles.link} to={"/Choclate"}>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavourfive} />
             <p>VANILLA</p>
         </div>
+        </Link>
+        <Link className={styles.link} to={"/Choclate"}>
         <div className={styles.flavour}>
             <img className={styles.image} src={Flavoursix} />
             <p>BLUEBERRY</p>
         </div>
+        </Link>
      </div>
     </div>
   )
