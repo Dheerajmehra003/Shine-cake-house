@@ -5,7 +5,9 @@ import Price from './Price'
 import About from './About'
 import Choices from './Choices'
 import Emailsection from './Emailsection'
-import Flavour from './Flavour'
+import CakeFlavour from './CakeFlavour'
+import Cakechoice from '../CakeDesign/Cakechoice'
+// import Flavour from './Flavour'
 
 function Profile() {
   return (
@@ -15,8 +17,10 @@ function Profile() {
          <p id={styles.headingtwo}>Egg Less Cakes</p>
     </div>
      <Price/>
-     <Flavour/>
-     <Choices/>
+     {/* <Flavour/> */}
+     <CakeFlavour/>
+     {/* <Choices/> */}
+     <Cakechoice/>
      <Ocasion/>
      <About/>
      <Emailsection/>

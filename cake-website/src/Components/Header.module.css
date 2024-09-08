@@ -23,7 +23,7 @@ nav{
 .headerlist{
     display: flex;
     gap: 15px;
-    align-items: flex-start;
+    align-items: center;
     margin-right:40px
 
 }
@@ -33,6 +33,7 @@ nav{
     font-weight: 400;
     cursor: default;
     color: yellow;
+    
 
 }
 .searchbar{
@@ -64,9 +65,12 @@ nav{
     height: 20px;
     width: 20px;
 }
-#carticon{
+.carticon{
     cursor: pointer;
     color: yellow;
+    height: 30px;
+    width: 30px;
+    
 }
 
 .secondheader{
@@ -90,6 +94,7 @@ nav{
 }
 .link{
     text-decoration: none;
+    
 }
 .list:hover{
 border-bottom: 1px solid yellow;
@@ -97,6 +102,22 @@ color: yellow;
 }
 .menu{
     display: none;
+}
+
+.notification{
+    position: absolute;
+    background: linear-gradient(310deg, rgba(67,44,44,1) 0%, rgba(105,37,37,1) 52%, rgba(71,31,31,1) 100%);
+    border-radius: 50%;
+    font-size: small;
+    text-align: center;
+    width: 20px;
+    top: 34px;
+    right: 85px;
+    border: 1px solid yellow;
+}
+.cartlink{
+    text-decoration: none;
+    color: yellow;
 }
 
 @media(max-width:768px){

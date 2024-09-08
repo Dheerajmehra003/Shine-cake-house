@@ -7,7 +7,7 @@ function Price() {
     <div className={styles.Pricecontainer}>
       <h2>Price</h2>
       <div className={styles.Prices}>
-        <Link className={styles.priceinfo} to="/under299">
+        <Link className={styles.priceinfo} to="/under299/299">
           <div className={styles.Pricetag}>
             <p>
               Under <br />
@@ -15,7 +15,7 @@ function Price() {
             </p>
           </div>
         </Link>
-        <Link className={styles.priceinfo} to="/under599">
+        <Link className={styles.priceinfo} to="/under299/599">
         <div className={styles.Pricetag}>
           <p>
             Under <br />
@@ -23,7 +23,7 @@ function Price() {
           </p>
         </div>
         </Link>
-        <Link className={styles.priceinfo} to="/under999">
+        <Link className={styles.priceinfo} to="/under299/999">
         <div className={styles.Pricetag}>
           <p>
             Under <br />

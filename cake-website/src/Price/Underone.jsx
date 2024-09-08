@@ -1,21 +1,34 @@
 import React, { useContext, useEffect, useState } from "react";
-import styles from "./Underone.module.css";
+import styles from "../Flavour/choclate.module.css";
 import ProductItem from "../Components/ProductItem";
 import { Shopcontext } from "../Context/shopContext";
+import { useParams } from "react-router-dom";
 
 function Underone() {
+  const {price}=useParams();
   const { products } = useContext(Shopcontext);
-  const [latestProducts, setLatestProducts] = useState([]);
-  useEffect(() => {
-    setLatestProducts(products.slice(0, 10));
-  }, []);
+  const [data,setData]= useState([])
+
+  const applyfilter=()=>{
+    let productsCopy =products.slice();
+    if (price.length > 0) {
+      productsCopy = productsCopy.filter((item) =>
+        price.includes(item.price)
+      );
+    }
+    setData(productsCopy)
+  }
+  useEffect(()=>{
+   applyfilter()
+  },[])
+
   return (
     <>
-      <div className={styles.Underonecontainer}>
+      <div className={styles.container}>
         <div className={styles.underinfo}>
-          <p>Cakes under 299</p>
+          <p>Cakes under {price}</p>
           <div className={styles.productcontainer}>
-            {latestProducts.map((item, index) => (
+            {data.map((item, index) => (
               <ProductItem
                 key={index}
                 id={item._id}
@@ -25,10 +38,12 @@ function Underone() {
               />
             ))}
           </div>
+        
         </div>
       </div>
     </>
-  );
+  )
 }
+
 
 export default Underone;

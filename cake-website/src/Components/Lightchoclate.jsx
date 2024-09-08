@@ -61,11 +61,11 @@ function Lightchoclate() {
               </p>
             </div>
           </div>
-          <form className={styles.form}>
+          {/* <form className={styles.form}>
             <input className={styles.inputstyle} type="text" placeholder="Enter Delivery Location" />
             <input className={styles.inputstyle}  type="date" placeholder="Select Delivery Date" /> <br />
             <input className={styles.inputstyle}  type="message" placeholder="Message on cake" />
-          </form>
+          </form> */}
           <div className={styles.iconscontainer}>
             <div className={styles.cart}>
               <p onClick={()=>addToCart(productData._id,size)}>Add To cart</p>
