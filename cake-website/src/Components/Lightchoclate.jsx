@@ -40,7 +40,7 @@ function Lightchoclate() {
             <FaStar className={styles.icon} />
           </div>
           <p className={styles.font}>₹{productData.price}</p>
-          <p className={styles.fontupgrade}>Pick an Upgrade</p>
+          <p className={styles.fontupgrade}>Pick a size</p>
           <div className={styles.imagecontainer}>
             <div onClick={()=>setSize(productData.sizeone)}  >
               <img className={`${size===productData.sizeone? styles.border:"" } ${styles.images}`} src={image} />
@@ -67,14 +67,11 @@ function Lightchoclate() {
             <input className={styles.inputstyle}  type="message" placeholder="Message on cake" />
           </form> */}
           <div className={styles.iconscontainer}>
-            <div className={styles.cart}>
-              <p onClick={()=>addToCart(productData._id,size)}>Add To cart</p>
+            <div >
+              <button className={styles.cart} onClick={()=>addToCart(productData._id,size)}>Add To cart</button>
             </div>
-              <FaCartPlus className={styles.iconcart} />
-            <div className={styles.buy}>
-              <p>Buy Now</p>
-            </div>
-              <AiFillThunderbolt className={styles.iconcart} />
+              <FaCartPlus  onClick={()=>addToCart(productData._id,size)}  className={styles.iconcart} />
+            
           </div>
           <div>
             <p className={styles.description} >Description</p>

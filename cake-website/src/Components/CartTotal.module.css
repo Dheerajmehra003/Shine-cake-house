@@ -1,0 +1,21 @@
+.cartTotalcontainer{
+    width: 500px;
+}
+.totalinfo{
+ font-size: 40px;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.shippingfee{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
