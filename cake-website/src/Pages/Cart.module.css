@@ -1,6 +1,5 @@
 .cartcontainer{
     margin-top: 60px;
-    height: 900px;
     background: linear-gradient(180deg, rgba(108,23,23,1) 0%, rgba(220,49,49,1) 100%);
     padding-bottom: 20px;
 }
@@ -18,6 +17,7 @@
     background-color: white;
     gap: 50px;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 .productinfo{
@@ -72,4 +72,44 @@ margin: 20px;
     background-color: black;
     color: white;
     margin-right: 40px;
+}
+@media only screen and (max-width: 720px) {
+    .cartcontainer{
+        margin-top: 40px;
+    }
+    .cartTitle{
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+    .cartimage{
+        margin-left: 10px;
+    }
+    .productinfo{
+        width: 200px;
+        margin-left: 20px;
+    }
+    .product{
+        gap: 0;
+        padding-bottom: 10px;
+        
+    }
+    .name{
+        font-size: 20px;
+    }
+    .quantity{
+        margin-left: 10px;
+        width: 100px;
+        height: 30px;
+    }
+   
+    .deleteicon{
+        position: relative;
+        left: 280px;
+    }
+    .btn{
+        width: 300px;
+        margin-right:0;
+        margin-left: 40px;
+    }
 }

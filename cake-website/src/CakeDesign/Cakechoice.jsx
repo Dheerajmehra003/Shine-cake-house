@@ -13,7 +13,7 @@ const Cakechoice = () => {
       <>
         <div className={styles.flavourcontainer}>
         <div className={styles.flavourinfo}>
-     <p>Pick A Flavour</p>
+     <p>Tempting Cake Choices</p>
         </div>
          <div className={styles.flavours}>
               {latestProducts.map((item, index) => (

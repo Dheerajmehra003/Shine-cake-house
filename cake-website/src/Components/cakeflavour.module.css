@@ -31,4 +31,24 @@
     flex-wrap: wrap;
     gap: 50px;
     padding-top: 50px;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px){
+    .flavourcontainer{
+        height: 100%;
+        padding-bottom: 20px;
+    }   
+    .flavourinfo{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .image{
+        height: 150px;
+        width: 160px;
+    }
+    .info{
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
 }

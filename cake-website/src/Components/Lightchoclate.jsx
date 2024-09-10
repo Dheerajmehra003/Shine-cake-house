@@ -73,7 +73,7 @@ function Lightchoclate() {
               <FaCartPlus  onClick={()=>addToCart(productData._id,size)}  className={styles.iconcart} />
             
           </div>
-          <div>
+          <div className={styles.descrip}>
             <p className={styles.description} >Description</p>
             <p className={styles.lists} >Product Details:</p>
             <ul>

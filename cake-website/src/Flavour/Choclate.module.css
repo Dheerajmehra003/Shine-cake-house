@@ -66,3 +66,15 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+@media only screen and (max-width: 720px) {
+  .container{
+    margin-top: 40px;
+  }
+  .underinfo{
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .productcontainer{
+    gap: 0;
+  }
+}

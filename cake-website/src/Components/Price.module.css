@@ -46,9 +46,11 @@ h2{
         background-repeat: no-repeat;
     }
     .Pricetag{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         font-size: 20px;
+        text-align: center;
+        font-weight: 600;
 
     }
     .Prices{

@@ -69,14 +69,11 @@ const Cart = () => {
             </div>
           );
         })}
-        {/* <div>
-          <div  className={styles.cartTotal}>
-            <CartTotal/>
-            <div>
+                   <div>
               <button className={styles.btn}>Proceed </button>
             </div>
-          </div>
-        </div> */}
+          
+        
       </div>
     </div>
   );
